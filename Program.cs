@@ -4,21 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Car2 ferrari = new Car2();
-            ferrari.Color = "Red";
+
+            var ferrari = new Car2("Ferrari", "Red", 380, 500, CarType.Gas);
+           /* ferrari.Color = "Red";
             ferrari.Brand = "Ferrari";
             ferrari.MaxSpeed = 350;
             ferrari.HorsePower = 180;
             ferrari.CarType = CarType.Gas;
-            ferrari.IsFasterThan(ferrari);
+            ferrari.IsFasterThan(ferrari);*/
 
-            Car2 volvo = new Car2();   
-            volvo.Color = "White";
+            var volvo = new Car2("Volvo", "White", 250, 180, CarType.Hybrid);   
+            /*volvo.Color = "White";
             volvo.Brand = "Volvo";
             volvo.MaxSpeed = 250;
             ferrari.HorsePower = 180;
             ferrari.CarType = CarType.Hybrid;
-            volvo.IsFasterThan(ferrari);
+            volvo.IsFasterThan(ferrari);*/
 
             ferrari.ShowInfo();
             ferrari.Drive();
