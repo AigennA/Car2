@@ -23,6 +23,10 @@
 
             var tesla = new Car2("Tesla", "Black", 300, 400, CarType.Electric);
 
+            var bmw = new Car2("BMW", "Brown", 200, 300, CarType.Disel);
+
+            var toyota = new Car2("TOYOTA", "Yellow", 320, 400, CarType.Hybrid);
+
 
             ferrari.ShowInfo();
             ferrari.Drive();
@@ -38,6 +42,16 @@
             tesla.Drive();
             tesla.Honk();
             tesla.Fuel();
+
+            bmw.ShowInfo();
+            bmw.Drive();
+            bmw.Honk();
+            bmw.Fuel();
+
+            toyota.ShowInfo();
+            toyota.Drive();
+            toyota.Honk();
+            toyota.Fuel();
 
         }
     }
