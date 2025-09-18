@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,5 +27,45 @@ namespace Car2
         public void Honk() { 
             Console.WriteLine("Honk Honk! ");
         }
-    }
+
+        public void Fuel() {
+            Console.WriteLine($"Car is of type: {CarType}");
+            switch (CarType)
+            {
+                case CarType.Electric:
+                    Console.WriteLine("Electric fuel");
+                    break;
+                case CarType.Gas:
+                    Console.WriteLine("Gas fuel");
+                    break;
+                case CarType.Disel:
+                    Console.WriteLine("Diesel fuel");
+                    break;
+                case CarType.Hybrid:
+                    Console.WriteLine("Hybrid fuel");
+                    break;
+                default:
+                    Console.WriteLine("Unknown car type.");
+                    break;
+            }
+        }
+
+            
+
+            public void IsFasterThan(Car2 otherCar)
+            {
+               if(otherCar.MaxSpeed > MaxSpeed)
+                {
+                    Console.WriteLine($"Car2 { otherCar.Brand} is the quickest.");
+                }
+               else if ( otherCar.MaxSpeed == MaxSpeed )
+                {
+                Console.WriteLine($"They are equal in speed");
+                }
+            else
+            {
+                Console.WriteLine($"Car2 {Brand} is quickest");
+            }
+        }
+        }
 }
