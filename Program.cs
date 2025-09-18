@@ -21,6 +21,9 @@
             ferrari.CarType = CarType.Hybrid;
             volvo.IsFasterThan(ferrari);*/
 
+            var tesla = new Car2("Tesla", "Black", 300, 400, CarType.Electric);
+
+
             ferrari.ShowInfo();
             ferrari.Drive();
             ferrari.Honk();
@@ -30,6 +33,11 @@
             volvo.Drive();
             volvo.Honk();
             volvo.Fuel();
+
+            tesla.ShowInfo();
+            tesla.Drive();
+            tesla.Honk();
+            tesla.Fuel();
 
         }
     }
