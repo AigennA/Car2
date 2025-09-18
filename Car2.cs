@@ -11,6 +11,8 @@ namespace Car2
         public string Brand;
         public string Color;
         public int MaxSpeed;
+        public int HorsePower;
+        public CarType CarType;
 
         public void ShowInfo()
         {
@@ -19,6 +21,10 @@ namespace Car2
 
         public void Drive() { 
             Console.WriteLine("The Car Is Driving");
+        }
+
+        public void Honk() { 
+            Console.WriteLine("Honk Honk! ");
         }
     }
 }

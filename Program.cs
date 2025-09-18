@@ -8,17 +8,21 @@
             ferrari.Color = "Red";
             ferrari.Brand = "Ferrari";
             ferrari.MaxSpeed = 350;
+            ferrari.HorsePower = 180;
+            ferrari.CarType = CarType.Gas;
 
             Car2 volvo = new Car2();   
             volvo.Color = "White";
             volvo.Brand = "Volvo";
             volvo.MaxSpeed = 250;
+            ferrari.HorsePower = 180;
+            ferrari.CarType = CarType.Hybrid;
 
             ferrari.ShowInfo();
-            volvo.Drive();
+            ferrari.Drive();
 
             volvo.ShowInfo();
-            ferrari.Drive();//
+            volvo.Drive();//
 
         }
     }
