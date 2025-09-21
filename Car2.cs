@@ -15,7 +15,7 @@ namespace Car2
         public int HorsePower;
         public CarType CarType;
 
-        // Add a public constructor to fix CS0122
+        // Add a public constructor to fix 
         public Car2(string brand, string color, int maxSpeed, int horsePower, CarType carType)
         {
             Brand = brand;
